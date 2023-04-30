@@ -14,6 +14,6 @@
     "uuid": "8.3.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "12.2.8"
+    "@angular-devkit/build-angular": "12.2.18"
   }
 }
