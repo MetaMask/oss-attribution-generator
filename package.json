@@ -2,7 +2,6 @@
   "dependencies": {
     "fs-jetpack": "^5.1.0",
     "license-checker": "^25.0.1",
-    "lodash.sortby": "^4.7.0",
     "taim": "^1.1.0",
     "yargs": "^7.1.2"
   },

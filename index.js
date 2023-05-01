@@ -29,7 +29,6 @@ const path = require('path');
 const jetpack = require('fs-jetpack');
 const os = require('os');
 const taim = require('taim');
-const sortBy = require('lodash.sortby');
 const {promisify} = require('util');
 
 const npmCheckerInit = promisify(npmChecker.init);
@@ -217,14 +216,15 @@ taim('Total Processing',
     })
     .then((licenseInfos) => {
         applyOverrides(options.outputDir, licenseInfos);
-        const attributionSequence = sortBy(licenseInfos, licenseInfo => licenseInfo.name.toLowerCase)
-            .filter(licenseInfo => {
-                return !licenseInfo.ignore && licenseInfo.name != undefined;
-            })
-            .map(licenseInfo => {
-                return [licenseInfo.name,`${licenseInfo.version} <${licenseInfo.url}>`,
-                        licenseInfo.licenseText || `license: ${licenseInfo.license}${os.EOL}authors: ${licenseInfo.authors}`].join(os.EOL);
-            });
+        licenseInfos.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'accent', ignorePunctuation: true }))
+        const attributionSequence =  licenseInfos
+            .filter(licenseInfo => !licenseInfo.ignore && licenseInfo.name != undefined)
+            .map(licenseInfo => [
+                    licenseInfo.name,
+                    `${licenseInfo.version} <${licenseInfo.url}>`,
+                    licenseInfo.licenseText || `license: ${licenseInfo.license}${os.EOL}authors: ${licenseInfo.authors}`
+                ].join(os.EOL)
+            );
 
         const attribution = attributionSequence.join(`${os.EOL}${os.EOL}******************************${os.EOL}${os.EOL}`);
 
