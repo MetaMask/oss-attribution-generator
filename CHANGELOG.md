@@ -14,7 +14,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove `lodash` ([mindbridge-ai/#1](https://github.com/mindbridge-ai/oss-attribution-generator/pull/1)) ([#6](https://github.com/MetaMask/oss-attribution-generator/pull/6))
 - Update dependencies ([mindbridge-ai/#3](https://github.com/mindbridge-ai/oss-attribution-generator/pull/3)) ([#3](https://github.com/MetaMask/oss-attribution-generator/pull/3))
 
-
-
 [Unreleased]: https://github.com/MetaMask/oss-attribution-generator/compare/v2.0.0...HEAD
 [2.0.0]: https://github.com/MetaMask/oss-attribution-generator/releases/tag/v2.0.0
