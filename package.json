@@ -11,6 +11,9 @@
   "bin": {
     "generate-attribution": "index.js"
   },
+  "files": [
+    "index.js"
+  ],
   "engines": {
     "node": ">=14.0.0"
   },
