@@ -109,7 +109,7 @@ async function getNpmLicenses() {
                 const defaultPackagePath = `${package['dir']}/node_modules/${package.name}/package.json`;
 
                 const itemAtPath = jetpack.exists(defaultPackagePath);
-                const packagePath = [defaultPackagePath];
+                let packagePath = [defaultPackagePath];
 
                 if (itemAtPath !== 'file') {
                   packagePath = jetpack.find(package['dir'], {
