@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [2.0.1]
-### Uncategorized
-- chore(test): bump fixture deps and devDeps ([#14](https://github.com/MetaMask/oss-attribution-generator/pull/14))
+### Fixed
+- Fix const reassignment ([#17](https://github.com/MetaMask/oss-attribution-generator/pull/17))
 
 ## [2.0.0]
 ### Changed
