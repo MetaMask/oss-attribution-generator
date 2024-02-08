@@ -7,10 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [2.0.2]
-### Uncategorized
-- Bump follow-redirects from 1.15.2 to 1.15.5 in /test/fixture ([#23](https://github.com/MetaMask/oss-attribution-generator/pull/23))
-- deps: use forked license-checker with fixed dependencies ([#7](https://github.com/MetaMask/oss-attribution-generator/pull/7))
-- Bump axios from 1.5.1 to 1.6.1 in /test/fixture ([#20](https://github.com/MetaMask/oss-attribution-generator/pull/20))
+### Fixed
+- Update from `license-checker` to `@metamask/license-checker` ([#7](https://github.com/MetaMask/oss-attribution-generator/pull/7))
 
 ## [2.0.1]
 ### Fixed
