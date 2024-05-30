@@ -2,7 +2,7 @@
 
 // usage
 const yargs = require('yargs')
-    .usage('Calculate the npm modules used in this project and generate a third-party attribution (credits) text.',
+    .usage('$0', 'Calculate the npm modules used in this project and generate a third-party attribution (credits) text.',
     {
         outputDir: {
             alias: 'o',

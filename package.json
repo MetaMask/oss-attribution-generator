@@ -3,7 +3,7 @@
     "@metamask/license-checker": "^26.0.1",
     "fs-jetpack": "^5.1.0",
     "taim": "^1.1.0",
-    "yargs": "^7.1.2"
+    "yargs": "^17.7.2"
   },
   "name": "@metamask/oss-attribution-generator",
   "description": "utility to parse bower and npm packages used in a project and generate an attribution file to include in your product",
