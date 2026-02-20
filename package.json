@@ -43,6 +43,6 @@
   },
   "homepage": "https://github.com/MetaMask/oss-attribution-generator#readme",
   "devDependencies": {
-    "mocha": "^9.1.3"
+    "mocha": "^11.7.5"
   }
 }
